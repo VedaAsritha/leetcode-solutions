@@ -5,11 +5,8 @@ class Solution {
             int fuel=5;
             mainTank-=fuel;
             res+=50;
-            if(additionalTank!=0){ mainTank++; additionalTank--;}
-   
+            if(additionalTank!=0){ additionalTank--; mainTank++;}
 
-    }
+        }
         res+=mainTank*10;
-        return res;
-    }}
-    
+        return res;}}
