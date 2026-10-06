@@ -3,10 +3,10 @@ class Solution {
         int n=arr.length;
         for(int i=0;i<n;i++){
             int lsum=0,rsum=0;
-            for(int j=0;j<i;j++)
-                lsum+=arr[j];
-             for(int k=i+1;k<n;k++)
-                rsum+=arr[k];
+            for(int j=0;j<n;j++){
+            if(j<i) lsum+=arr[j];
+            else if(j>i) rsum+=arr[j];}
+               
         if(lsum==rsum) return i;        }
         return -1;
     }
