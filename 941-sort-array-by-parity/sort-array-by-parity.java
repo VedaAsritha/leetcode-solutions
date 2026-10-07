@@ -1,11 +1,11 @@
 class Solution {
     public int[] sortArrayByParity(int[] nums) {
-        int[] arr= new int[nums.length];
+        int[] arr=new int[nums.length];
         int n=nums.length;
-        int left=0,right=n-1;
+        int l=0,r=n-1;
         for(int i=0;i<n;i++){
-            if(nums[i]%2==0){ arr[left]=nums[i]; left++;}
-            else{ arr[right]=nums[i]; right--;}
+            if(nums[i]%2==0) {arr[l]=nums[i]; l++;}
+            else{arr[r]=nums[i]; r--;}
         }
     return arr;}
 }
